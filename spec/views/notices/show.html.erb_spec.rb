@@ -242,6 +242,14 @@ describe 'notices/show.html.erb' do
     expect(rendered).to have_content("Re: Some subject")
   end
 
+  it "displays a counternotice's original notice link" do
+    assign(:notice, build(:counternotice, counternotice_for_id: 500))
+
+    render
+
+    expect(rendered).to have_css( 'dt', text: 'Counternotice for:' )
+  end
+
   it "displays limited related blog entries" do
     blog_entries = build_stubbed_list(:blog_entry, 3)
     notice = build(:dmca)
