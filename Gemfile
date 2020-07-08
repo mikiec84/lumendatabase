@@ -21,7 +21,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 # kaminari is locked because we've monkeypatched it to work around
 # slow postgres table counts on large tables.
-gem 'kaminari', '0.14.1'
+gem 'kaminari', '1.2.1'
 gem 'lograge'
 gem 'loofah', '>= 2.2.3'
 gem 'mime-types', '2.99.3'
