@@ -203,9 +203,11 @@ GEM
     metaclass (0.0.1)
     method_source (0.8.2)
     mime-types (2.99.3)
-    mimemagic (0.3.2)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.1)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.5.1)
     minitest (5.11.3)
     mocha (0.13.3)
       metaclass (~> 0.0.1)
@@ -217,8 +219,9 @@ GEM
       sass (>= 3.2)
     nested_form (0.3.2)
     netrc (0.11.0)
-    nokogiri (1.9.1)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.11.5)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     oink (0.10.1)
       activerecord
       hodel_3000_compliant_logger
@@ -245,6 +248,7 @@ GEM
     pry-rails (0.3.1)
       pry (>= 0.9.10)
     public_suffix (3.0.3)
+    racc (1.5.2)
     rack (1.6.11)
     rack-accept (0.4.5)
       rack (>= 0.4)
